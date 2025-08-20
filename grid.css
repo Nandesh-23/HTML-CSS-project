@@ -1,0 +1,107 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px 1fr 70px;
+    grid-template-areas: 
+    "header header header"
+    "sidebar container extra"
+    "footer footer footer";
+    gap: 15px;
+    padding: 10px;
+
+}
+
+header {
+    grid-area: header;
+    background-color: lawngreen;
+    color: black;
+    font-size: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(79, 47, 150);
+    padding: 10px;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.container{
+    grid-area: container;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-template-rows: minmax(100px,auto);
+    gap : 10px;
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+.cell{
+    background-color: rgb(146, 165, 205);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+   
+
+    text-align: center;
+    justify-content: center;
+
+}
+
+.extra {
+    grid-area: extra;
+    background-color: rgb(163, 6, 92);
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: cadetblue;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media(max-width:500px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header"
+        "side"
+        "main"
+        "extra"
+        "footer";
+    }
+}
