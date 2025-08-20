@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucatti Premium Cars </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+        header{
+            background-color: #0f0f0f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            background-image: url("rolls royce.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        header h1{
+            font-size: 3rem;
+            background: rgb(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        nav{
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+        }
+        nav a{
+            color: #fff;
+            text-decoration: solid;
+            font-weight: bold;
+            transition: color 0.5s;
+        }
+        nav.a:hover{
+            color: #00bfff;
+        }
+        section{
+            padding: 60px;
+        }
+        .specs{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #f4f4f4;
+        }
+        .specs-1{
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 8px rgba(0,0,0,0.7);
+            margin: 15px;
+            padding: 20px;
+            width: 200px;
+        }
+        .specs-1:hover{
+            transform: scale(1.2);
+        }
+        .gallery{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery img{
+            width: 200px;
+        }
+        .gallery img:hover{
+            transform: scale(1.2);
+        }
+        .video{
+            display: flex;
+            justify-content: center;
+        }
+        iframe{
+            width: 75%;
+            height: 300px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a herf="#">Home</a>
+        <a href="#cars">Cars</a>
+        <a href="#about">About</a>
+        <a href="#specs">Specs</a>
+        <a href="#contact us">Contact us</a>
+        <a href="#video">Video</a>
+
+    </nav>
+    <header>
+    <h1>Welcom to Bucati & Lamborgini Premium Showroom</h1>
+    </header>
+    <section id="specs" class="specs">
+        <div class="specs-1">
+        <h3>Bucati chiron</h3>
+        <p>Engine: 8000cc</p>
+        <p>Horsepower: 1479hHP</p>
+        <p>Top Speed: 333 km/hr</p>
+    </div>
+    <div class="specs-1">
+        <h3>Bucati variyon</h3>
+        <p>Engine: 7899cc</p>
+        <p>Horsepower: 1489HP</p>
+        <p>Top Speed: 310 km/hr</p>
+    </div>
+    <div class="specs-1">
+        <h3>Lamborgini Revolton</h3>
+        <p>Engine: 7600cc</p>
+        <p>Horsepower: 1476HP</p>
+        <p>Top Speed: 330 km/hr</p>
+
+    </div>
+        </section>
+        <section id="Cars" class="gallery">
+            <img src="lamborgini.jpg" alt="car 1">
+            <img src="ferrari.jpg" alt="car 2">
+            <img src="bucatti.jpg"  alt="car 3">
+            <img src="rolls.jpg" alt="car 4">
+        </section>
+        <section id="Video" class="video">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/tTmI_7F7j7E?si=-72xBvlJCXjEr9n_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        </section>
+</body>
+</html>
